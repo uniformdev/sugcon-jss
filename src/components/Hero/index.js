@@ -3,8 +3,6 @@ import { Text, RichText, Image, Link } from "@sitecore-jss/sitecore-jss-react";
 import RouterLink from "../../atoms/RouterLink";
 import ResponsiveLazyImage from "../../atoms/ResponsiveLazyImage";
 
-import _ from "lodash";
-
 const Hero = ({ fields }) => {
   if (!fields) {
     return null;
@@ -36,7 +34,7 @@ const Hero = ({ fields }) => {
 
             {ctaLink && ctaLink.value && (
               <RouterLink
-                href={_.get(ctaLink, "value.href", "")}
+                href={ctaLink?.value?.href}
                 className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"
               >
                 <Text field={ctaTitle} />
