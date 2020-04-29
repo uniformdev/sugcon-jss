@@ -1,5 +1,6 @@
 import React from "react";
 import { Image } from "cloudinary-react";
+import LazyLoad from "react-lazyload";
 
 const ResponsiveLazyImage = ({ src, className }) => {
   // TODO: add experience editor
@@ -16,15 +17,17 @@ const ResponsiveLazyImage = ({ src, className }) => {
   }
 
   return (
-    <Image
-      cloudName={cloudinaryAccount}
-      className={className}
-      type="fetch"
-      publicId={originImagePath}
-      responsive
-      width="auto"
-      crop="scale"
-    />
+    <LazyLoad height={200}>
+      <Image
+        cloudName={cloudinaryAccount}
+        className={className}
+        type="fetch"
+        publicId={originImagePath}
+        responsive
+        width="auto"
+        crop="scale"
+      />
+    </LazyLoad>
   );
 };
 
