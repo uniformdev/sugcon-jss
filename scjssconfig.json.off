@@ -1,0 +1,9 @@
+{
+  "sitecore": {
+    "instancePath": "C:\\inetpub\\wwwroot\\dotsite.www",
+    "apiKey": "{81BAB8AC-E2FA-4520-BFAB-AD1A2B1911A2}",
+    "deploySecret": "u3oio0hh759sde7qb51jcrdwaqsqh26eihhacm5xd68a",
+    "deployUrl": "https://www.dotsite.local/sitecore/api/jss/import",
+    "layoutServiceHost": "https://www.dotsite.local"
+  }
+}

@@ -1,0 +1,137 @@
+id: home-page
+fields:
+  pageTitle: SUGCON
+  logo:
+    src: /data/media/img/sugcon-logo.png
+template: HomePage
+placeholders:
+  sugcon-main:
+    - componentName: Hero
+      name: hero
+      displayName: Main Hero
+      fields:
+        label: SUGCON 2021 is coming
+        heading: "What do you mean you're not registered yet? 😲"
+        content: "@jermdavis"
+        image:
+          src: /data/media/img/jeremy.png
+        ctaTitle: Register
+        ctaLink:
+          href: /register
+    - componentName: TeaserSection
+      name: highlights
+      displayName: Highlights Section
+      fields:
+        title: SUGCON Highlights
+        teasers:
+          - template: Teaser
+            name: community-teaser
+            fields:
+              title: Outstanding community content
+              text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              image:
+                src: /data/media/img/conference1.jpg
+          - template: Teaser
+            name: immersion-teaser
+            fields:
+              title: Full Immersion in Sitecore community
+              text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              image:
+                src: /data/media/img/conference2.jpg
+    - componentName: CtaSection
+      name: convince-boss-section
+      displayName: Convince your boss Section
+      fields:
+        title: Convince your boss
+        teasers:
+          - template: TextTeaser
+            fields:
+              title: Evaluating Sitecore?
+              text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              ctaTitle: Download letter
+              ctaLink:
+                href: /download-letter
+          - template: TextTeaser
+            fields:
+              title: Just getting started with Sitecore?
+              text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              ctaTitle: Download letter
+              ctaLink:
+                href: /download-letter
+          - template: TextTeaser
+            fields:
+              title: Already a Sitecore expert?
+              text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              ctaTitle: Download letter
+              ctaLink:
+                href: /download-letter
+    - componentName: Speakers
+      name: speakers
+      displayName: Speakers Section
+      fields:
+        speakers:
+          - id: corey-speaker
+          - id: una-speaker
+          - id: adam-speaker
+          - id: akshay-speaker
+          - id: corey-speaker
+          - id: una-speaker
+          - id: adam-speaker
+          - id: akshay-speaker
+          - id: corey-speaker
+          - id: una-speaker
+          - id: adam-speaker
+          - id: akshay-speaker
+    - componentName: PricingSection
+      name: pricing
+      displayName: Pricing Section
+      fields:
+        title: Prices
+        levels:
+          - template: PricingLevel
+            fields:
+              title: MVP
+              price: $TBD
+              ctaTitle: Register
+              ctaLink:
+                href: /register
+              lineItems: "Lunch, refreshments, party"
+          - template: PricingLevel
+            fields:
+              title: Early Bird
+              price: $TBD
+              ctaTitle: Register
+              ctaLink:
+                href: /register
+              lineItems: "Lunch, picture with Akshay, mega party"
+          - template: PricingLevel
+            fields:
+              title: Lazy Bird
+              price: $TBD
+              ctaTitle: Register
+              ctaLink:
+                href: /register
+              lineItems: "Free scooter, refreshments"
+    - componentName: WaveSplitter
+    - componentName: CtaBlock
+      name: call-for-papers-section
+      displayName: Call for papers Section
+      fields:
+        title: Submit your talk
+        text: Call for papers is open now.
+        ctaLink:
+          href: /call-for-papers
+        ctaTitle: Submit your talk
+    - componentName: MapBlock
+      name: map-section
+      displayName: Vanue map
+      fields:
+        title: SUGCON Venue location
+        lat: 47.487911
+        lng: 19.023097
+    - componentName: VideoBlock
+      name: video-block
+      displayName: Video block
+      fields:
+        title: Discover what drives Sitecore Community
+        videoId: PsGKtbURy1A

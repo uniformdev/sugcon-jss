@@ -1,0 +1,12 @@
+id: register-page
+fields:
+  pageTitle: Register for SUGCON
+placeholders:
+  sugcon-main:
+    - componentName: Hero
+      fields:
+        heading: How to register for SUGCON
+        content: SOME TEXT
+        image:
+            src: /data/media/img/hero.png
+         

@@ -1,0 +1,10 @@
+id: adam-speaker
+name: Adam Weber
+displayName: Adam Weber
+template: Speaker
+fields:
+  name: Adam Weber
+  jobTitle: Principal Front-end Architect
+  company: Altola, Inc.
+  picture:
+    src: /data/media/img/speakers/adam_weber.jpg

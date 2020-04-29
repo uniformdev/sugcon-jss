@@ -1,0 +1,16 @@
+{
+    "files": [
+      {
+        "path": "./build/server.bundle.js",
+        "maxSize": "800 kB"
+      },
+      {
+        "path": "./build/static/js/*.chunk.js",
+        "maxSize": "800 kB"
+      },
+      {
+        "path": "./build/static/css/*.chunk.css",
+        "maxSize": "20 kB"
+      }
+    ]
+  }

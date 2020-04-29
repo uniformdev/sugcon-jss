@@ -1,0 +1,9 @@
+{
+  "sitecore": {
+    "instancePath": "C:\\Users\\alex\\code\\sugcon-ssr",
+    "apiKey": "{E4F3BB51-8326-4031-A1EB-43A904B38BD2}",
+    "deploySecret": "u3oio0hh759sde7qb51jcrdwaqsqh26eihhacm5xd68a",
+    "deployUrl": "http://jss93cm.dev.local/sitecore/api/jss/import",
+    "layoutServiceHost": ""
+  }
+}

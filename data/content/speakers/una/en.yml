@@ -1,0 +1,10 @@
+id: una-speaker
+name: una
+displayName: Una Verhoeven
+template: Speaker
+fields:
+  name: Una Verhoeven
+  jobTitle: Global Sitecore Architect
+  company: Valtech
+  picture:
+    src: /data/media/img/speakers/una.jpg

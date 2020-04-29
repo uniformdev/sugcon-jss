@@ -1,0 +1,10 @@
+id: corey-speaker
+name: corey
+displayName: Corey Smith
+template: Speaker
+fields:
+  name: Corey Smith
+  jobTitle: President
+  company: Corey Smith Consulting, Inc.
+  picture:
+    src: /data/media/img/speakers/corey.jpg

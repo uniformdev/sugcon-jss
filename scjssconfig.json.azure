@@ -1,0 +1,9 @@
+{
+  "sitecore": {
+    "instancePath": "C:\\Users\\alex\\code\\sugcon-ssr",
+    "apiKey": "{939DEEC3-16A7-4325-98DF-CCB17684F08C}",
+    "deploySecret": "u3oio0hh759sde7qb51jcrdwaqsqh26eihhacm5xd68a",
+    "deployUrl": "https://sugcon-demo-330730-cm.azurewebsites.net/sitecore/api/jss/import",
+    "layoutServiceHost": "https://sugcon-demo-330730-cd.azurewebsites.net"
+  }
+}

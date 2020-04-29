@@ -1,0 +1,10 @@
+id: akshay-speaker
+name: Akshay Sura
+displayName: Akshay Sura
+template: Speaker
+fields:
+  name: Akshay Sura
+  jobTitle: Partner
+  company: Konabos Consulting
+  picture:
+    src: /data/media/img/speakers/akshay.jpg

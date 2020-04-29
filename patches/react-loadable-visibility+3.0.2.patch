@@ -1,0 +1,25 @@
+diff --git a/node_modules/react-loadable-visibility/createLoadableVisibilityComponent.js b/node_modules/react-loadable-visibility/createLoadableVisibilityComponent.js
+index b70a75b..33a9c38 100644
+--- a/node_modules/react-loadable-visibility/createLoadableVisibilityComponent.js
++++ b/node_modules/react-loadable-visibility/createLoadableVisibilityComponent.js
+@@ -25,7 +25,7 @@ if (_capacities.IntersectionObserver) {
+         visibilityHandler();
+       }
+     });
+-  });
++  }, {rootMargin: '250px 0px 250px 0px'});
+ }
+ 
+ function createLoadableVisibilityComponent(args, _ref) {
+@@ -96,9 +96,9 @@ function createLoadableVisibilityComponent(args, _ref) {
+         minHeight: "1px",
+         minWidth: "1px"
+       }
+-    }, props, {
++    }, props.loadingPlaceholderProps, {
+       ref: visibilityElementRef
+-    }));
++    }), (props.loadingPlaceholderProps && props.loadingPlaceholderProps.content) || '');
+   }
+ 
+   LoadableVisibilityComponent[preloadFunc] = function () {
