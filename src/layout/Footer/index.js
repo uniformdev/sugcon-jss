@@ -1,7 +1,6 @@
 import React from "react";
 import RouterLink from "../../atoms/RouterLink";
 import Logo from "../../atoms/Logo";
-import moment from "moment";
 
 const Footer = ({ route }) => {
   return (
@@ -127,7 +126,7 @@ const Footer = ({ route }) => {
         </div>
       </div>
       <p className="text-gray-500">
-        Sitecore User Group Conference © {moment().format("YYYY")}
+        Sitecore User Group Conference © {new Date().getFullYear()}
       </p>
     </footer>
   );
