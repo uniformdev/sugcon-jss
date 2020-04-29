@@ -13,7 +13,7 @@ const Footer = ({ route }) => {
               className="text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
               href="#"
             >
-              <Logo image={route?.fields?.logo?.value?.src} />
+              <Logo width="50" src={route?.fields?.logo?.value?.src} />
             </a>
           </div>
           <div className="flex-1">

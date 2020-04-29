@@ -33,7 +33,7 @@ const Nav = ({ route }) => {
             }`}
             href="/"
           >
-            <Logo image={route?.fields?.logo?.value?.src} />
+            <Logo width="50" src={route?.fields?.logo?.value?.src} />
           </RouterLink>
         </div>
         <div className="block lg:hidden pr-4">

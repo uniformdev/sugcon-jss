@@ -21,6 +21,13 @@ This site is built with Sitecore JSS and is used to support the presentation on 
     ```
      See `.env.example`.
 
+
+1. The app is using Cloudinary for image CDN. You would need to acquire your own account with Cloudinary and provide the given account name as environment variable:
+    ```
+    REACT_APP_CLOUDINARY_ACCOUNT=your-account-name
+    ```
+     See `.env.example`.
+
 ## Deployment to Sitecore
 1. `jss setup` and follow the steps in CLI
 1. `jss deploy app -c` to deploy the app: code and content. 
