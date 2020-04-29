@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, RichText, Image, Link } from "@sitecore-jss/sitecore-jss-react";
 import RouterLink from "../../atoms/RouterLink";
+import ResponsiveLazyImage from "../../atoms/ResponsiveLazyImage";
+
 import _ from "lodash";
 
 const Hero = ({ fields }) => {
@@ -43,8 +45,8 @@ const Hero = ({ fields }) => {
           </div>
 
           {image && image.value && (
-            <div className="w-full md:w-3/5 py-6 text-center">
-              <Image className="w-full md:w-4/5 z-50" field={image} />
+            <div className="w-full md:w-3/5 py-6 text-center">        
+              <ResponsiveLazyImage className="w-full md:w-4/5 z-50" {...image?.value} />
             </div>
           )}
         </div>

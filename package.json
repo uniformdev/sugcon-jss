@@ -33,6 +33,7 @@
     "apollo-cache-inmemory": "^1.6.5",
     "apollo-client": "^2.6.8",
     "apollo-link-http": "^1.5.16",
+    "cloudinary-react": "^1.5.0",
     "google-map-react": "^1.1.7",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",

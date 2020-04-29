@@ -1,11 +1,12 @@
 import React from "react";
-import { Image, Text } from "@sitecore-jss/sitecore-jss-react";
+import { Text } from "@sitecore-jss/sitecore-jss-react";
+import ResponsiveLazyImage from "../../atoms/ResponsiveLazyImage";
 
 const SpeakerTile = ({ fields }) => (
   <div className="md:w-1/2 xl:w-1/4 p-6 flex flex-col">
     <a href="#">
-      <Image
-        field={fields.picture}
+      <ResponsiveLazyImage
+        {...fields?.picture?.value}
         className="object-cover h-48 w-full hover:grow hover:shadow-lg"
       />
       <div className="pt-3 flex items-center justify-between">

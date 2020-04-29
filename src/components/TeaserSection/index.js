@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, RichText, Image, Link } from "@sitecore-jss/sitecore-jss-react";
+import { Text, RichText, Link } from "@sitecore-jss/sitecore-jss-react";
 import RouterLink from "../../atoms/RouterLink";
+import ResponsiveLazyImage from "../../atoms/ResponsiveLazyImage";
 
 const TeaserText = ({ title, text }) => (
   <div className="w-5/6 sm:w-1/2 p-6">
@@ -15,7 +16,7 @@ const TeaserText = ({ title, text }) => (
 
 const TeaserImage = ({ image }) => (
   <div className="w-full sm:w-1/2 p-6">
-    <Image field={image} className="w-full sm:h-64 mx-auto" />
+    <ResponsiveLazyImage {...image?.value} className="w-full sm:h-64 mx-auto" />
   </div>
 );
 
