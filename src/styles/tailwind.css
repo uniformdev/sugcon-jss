@@ -1,0 +1,12 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}

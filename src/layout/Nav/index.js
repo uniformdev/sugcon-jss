@@ -32,11 +32,6 @@ const Nav = ({ route }) => {
     setScrolled(currPos.y < 0);
   });
 
-  const showSubmenu =
-    "lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-gray-100";
-  const hideSubmenu =
-    "hidden bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20";
-
   return (
     <nav
       id="header"
@@ -66,8 +61,8 @@ const Nav = ({ route }) => {
         </div>
 
         <div
-          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 ${
-            submenuVisible ? showSubmenu : hideSubmenu
+          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 ${
+            submenuVisible ? "bg-gray-100" : "hidden bg-white"
           }  ${isScrolled ? "bg-white" : "bg-gray-100"}`}
           id="nav-content"
         >

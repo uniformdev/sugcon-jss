@@ -9,31 +9,48 @@
     <meta name="theme-color" content="#000000" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
-    />
-    <!--Replace with your tailwind.css once created-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <style>
-      .gradient {
-        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-      }
-    </style>
   </head>
-
-  <body
-    class="leading-normal tracking-normal text-white gradient"
-    style="font-family: 'Roboto', 'Montserrat', sans-serif;"
-  >
+  <body class="leading-normal tracking-normal text-white gradient">
     <div id="root"></div>
     <script type="application/json" id="__JSS_STATE__">
       null
+    </script>
+    <script>
+      const loadDynamicScript = (src, id, callback) => {
+        const existingScript = document.getElementById("#" + id);
+        if (!existingScript) {
+          const script = document.createElement("script");
+          script.src = src; // URL for the third-party library being loaded.
+          script.id = id; // e.g., googleMaps or stripe
+          script.async = false;
+          document.body.appendChild(script);
+          script.onload = () => {
+            if (callback) callback();
+          };
+        }
+        if (existingScript && callback) callback();
+      };
+      const onDomContentLoaded = (func) => {
+        console.log("here");
+        if (typeof window !== "undefined") {
+          window.addEventListener("load", (event) => {
+            func();
+          });
+        }
+      };
+      onDomContentLoaded(() => {
+        loadDynamicScript(
+          "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+          "webfont",
+          () => {
+            WebFont.load({
+              google: {
+                families: ["Montserrat:300,700:latin", "Roboto:700:latin"],
+              },
+            });
+          }
+        );
+      });
     </script>
 
     <!--

@@ -4,7 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import AppRoot from './AppRoot';
 import { matchRoute } from './lib/routerUtils';
 import { AppStateProvider, AppState } from './lib/AppStateProvider';
-// import { loadableReady } from '@loadable/component';
+
+import './styles/styles.css';
 
 /* eslint-disable no-underscore-dangle */
 
