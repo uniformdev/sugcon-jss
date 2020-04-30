@@ -8,26 +8,30 @@ import loadable from 'react-loadable-visibility/loadable-components';
 
 
 import {
-CtaBlock,
-CtaSection,
 Hero,
-PricingSection,
-TeaserSection,
 WaveSplitter
 } from '../components';
 
 const components = new Map();
-components.set('CtaBlock', CtaBlock);
-components.set('CtaSection', CtaSection);
+
+// NOTE: 'import' paths _must_ be static in order for webpack to be able to analyze them at build time.
+components.set('CtaBlock', loadable(() => import(/* webpackChunkName: "CtaBlock" */'../components/CtaBlock')))
+
+// NOTE: 'import' paths _must_ be static in order for webpack to be able to analyze them at build time.
+components.set('CtaSection', loadable(() => import(/* webpackChunkName: "CtaSection" */'../components/CtaSection')))
 components.set('Hero', Hero);
 
 // NOTE: 'import' paths _must_ be static in order for webpack to be able to analyze them at build time.
 components.set('MapBlock', loadable(() => import(/* webpackChunkName: "MapBlock" */'../components/MapBlock')))
-components.set('PricingSection', PricingSection);
+
+// NOTE: 'import' paths _must_ be static in order for webpack to be able to analyze them at build time.
+components.set('PricingSection', loadable(() => import(/* webpackChunkName: "PricingSection" */'../components/PricingSection')))
 
 // NOTE: 'import' paths _must_ be static in order for webpack to be able to analyze them at build time.
 components.set('Speakers', loadable(() => import(/* webpackChunkName: "Speakers" */'../components/Speakers')))
-components.set('TeaserSection', TeaserSection);
+
+// NOTE: 'import' paths _must_ be static in order for webpack to be able to analyze them at build time.
+components.set('TeaserSection', loadable(() => import(/* webpackChunkName: "TeaserSection" */'../components/TeaserSection')))
 
 // NOTE: 'import' paths _must_ be static in order for webpack to be able to analyze them at build time.
 components.set('VideoBlock', loadable(() => import(/* webpackChunkName: "VideoBlock" */'../components/VideoBlock')))

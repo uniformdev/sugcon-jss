@@ -27,7 +27,7 @@ const componentFactoryPath = path.resolve('src/temp/componentFactory.tsx');
 
 // The `dynamicImports` array should contain component names that will be used
 // to map component instances to component names in the component factory.
-const allowedDynamicImports = ['MapBlock', 'VideoBlock', 'Speakers'];
+const allowedDynamicImports = ['MapBlock', 'VideoBlock', 'Speakers', 'CtaSection', 'TeaserSection', 'PricingSection', 'CtaBlock'];
 const excludeComponents = [];
 
 const isWatch = process.argv.some((arg) => arg === '--watch');
