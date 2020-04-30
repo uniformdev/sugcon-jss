@@ -1,7 +1,7 @@
 import React from "react";
-import { Text, RichText, Image, Link } from "@sitecore-jss/sitecore-jss-react";
+import { Text, RichText } from "@sitecore-jss/sitecore-jss-react";
 import RouterLink from "../../atoms/RouterLink";
-import ResponsiveLazyImage from "../../atoms/ResponsiveLazyImage";
+import CloudinaryImage from "../../atoms/CloudinaryImage";
 
 const Hero = ({ fields }) => {
   if (!fields) {
@@ -43,8 +43,11 @@ const Hero = ({ fields }) => {
           </div>
 
           {image && image.value && (
-            <div className="w-full md:w-3/5 py-6 text-center">        
-              <ResponsiveLazyImage className="w-full md:w-4/5 z-50" {...image?.value} />
+            <div className="w-full md:w-3/5 py-6 text-center">
+              <CloudinaryImage
+                className="w-full md:w-4/5 z-50"
+                {...image?.value}
+              />
             </div>
           )}
         </div>
